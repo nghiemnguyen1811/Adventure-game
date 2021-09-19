@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8649853002050103250}
   m_Layer: 0
   m_Name: Player 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -146,7 +146,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -164,3 +164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86d8058bdaef54a4ea7c77870991ee56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpForce: 11
+  moveForce: 10
+  myBody: {fileID: 21245313507233114}

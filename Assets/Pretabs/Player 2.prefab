@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2361669630450089674}
   - component: {fileID: 6277935406772485906}
   - component: {fileID: 99480583726381976}
+  - component: {fileID: 412284329}
   m_Layer: 0
   m_Name: Player 2
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 956356517
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: -8732285999409787101, guid: ef09b77c63db913409c8cbdb3c8759e5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -145,9 +146,24 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &412284329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5064933626926815576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86d8058bdaef54a4ea7c77870991ee56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 11
+  moveForce: 10
+  myBody: {fileID: 99480583726381976}
